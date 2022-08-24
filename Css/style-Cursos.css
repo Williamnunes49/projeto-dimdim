@@ -1,0 +1,253 @@
+*{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+
+/**Formatando Cabeçalho**/
+header{
+    display: block;
+    width: 1280px;
+}
+#cabeçalho{
+    background: #2E948A;
+box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+display: flex;
+justify-content: space-between;
+padding-left: 10%;
+padding-right: 10%;
+padding-top: 2%;
+padding-bottom: 2%;
+}
+#cabeçalho img{
+    width: 30%;
+    display: flex;
+    
+}
+#nav-header{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-header a{
+    font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #FDFDFD;
+
+}
+
+/**Formatando Main**/
+main{
+    display: block;
+    width: 1280px;
+}
+
+#retangulo1{
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 20%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+#retangulo1 .one{
+    width: 46.15%;
+}
+#retangulo1 .one h1{
+    font-weight: 700;
+font-size: 55px;
+line-height: 63px;
+
+color: #FF4081;
+padding-bottom: 8%;
+}
+#retangulo1 img{
+    width: 38.46%;
+}
+
+#retangulo2{
+display: flex;
+flex-direction: column;
+width: 70%;
+padding-left: 15%;
+padding-right: 15%;
+padding-top: 10%;
+background: #F7F7F7;
+}
+#retangulo2 .two2, .one1, .three3{
+display: flex;
+justify-content: space-between;
+padding-bottom: 5%;
+padding-top: 5%;
+}
+#retangulo2 .one11, .two22, .three33{
+display: flex;
+flex-direction: column;
+}
+#retangulo2 .one1 iframe{
+    width: 42.85%;
+}
+#retangulo2 .one11{
+    width: 42.85%;
+}
+#retangulo2 .two2 iframe{
+    width: 42.85%;
+}
+#retangulo2 .two22{
+    width: 42.85%;
+}
+#retangulo2 .three3 iframe{
+    width: 42.85%;
+}
+#retangulo2 .three33{
+    width: 42.85%;
+}
+.three33 h2, .two22 h2, .one11 h2{
+    font-weight: 700;
+font-size: 35px;
+line-height: 40px;
+
+color: #FF4081;
+}
+
+hr {
+	width: 120%;
+	margin: 0 20% 0 -10%; /* Para navegadores standard */
+	}
+
+/**Formatando Footer**/
+footer{
+    display: block;
+    width: 1280px;
+}
+#rodape{
+    background: #419488;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+padding-right: 10%;
+padding-top: 2%;
+padding-bottom: 2%;
+    
+}
+#nav-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+#nav-footer a{
+    font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+
+color: #FFFFFF;
+}
+#links{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#links .link1{
+    border: 2px solid #FFFFFF;
+border-radius: 62px;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+
+color: #FFFFFF;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+Width:289px;
+Height:51px;
+}
+
+
+@media (min-width:1280px) {
+    header{
+        display: inline;
+        width: 1600px;
+    }
+    footer{
+        display: inline;
+        width: 1600px;
+    }
+    main{
+        display: inline;
+        width: 1600px;
+    }
+}
+@media (max-width:640px){
+    
+    #retangulo2 .two2, .one1, .three3{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5%;
+        padding-top: 5%;
+        }
+    #retangulo2 .one1 iframe{
+            width: 100%;
+            height: 500px;
+        }
+    #retangulo2 .one11{
+            width: 100%;
+        }
+    #retangulo2 .two2 iframe{
+            width: 100%;
+            height: 500px;
+        }
+    #retangulo2 .two22{
+            width: 100%;
+        }
+    #retangulo2 .three3 iframe{
+            width: 100%;
+            height: 500px;
+        }
+    #retangulo2 .three33{
+            width: 100%;
+        }
+    .three33 h2, .two22 h2, .one11 h2{
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 40px;
+
+    color: #FF4081;
+    padding-top: 5%;
+    text-align: center;
+    }
+    .three33 p, .two22 p, .one11 p{
+        font-size: 30px;
+    }
+    #retangulo1 .one p{
+        font-size: 30px;
+        width: 240%;
+        text-align: center;
+    }
+    #retangulo1 img{
+        display: none;
+    }
+    #retangulo1 .one h1{
+    
+        width: 240%;
+        text-align: center;
+    }
+    
+    
+}
+@media (min-width:640px) and (max-width:960px) {
+    .three33 p, .two22 p, .one11 p{
+        font-size: 20px;}
+     #retangulo1 .one p{
+        font-size: 20px;
+    }
+}

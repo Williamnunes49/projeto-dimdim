@@ -1,0 +1,478 @@
+*{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+/**Formatando Cabeçalho**/
+header{
+    display: block;
+    width: 1280px;
+}
+#cabeçalho{
+    background: #2E948A;
+box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
+display: flex;
+justify-content: space-between;
+padding-left: 10%;
+padding-right: 10%;
+padding-top: 2%;
+padding-bottom: 2%;
+}
+#cabeçalho img{
+    width: 30%;
+    display: flex;
+    
+}
+#nav-header{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-header a{
+    font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #FDFDFD;
+
+}
+
+/**Formatando Main**/
+main{
+    display: block;
+    width: 1280px;
+}
+
+#retangulo1{
+    width: 60%;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+    gap: 12px;
+
+}
+#retangulo1 h2{
+color: #FF4081;
+font-weight: 500;
+font-size: 50px;
+line-height: 57px;
+}
+#retangulo1 span{
+    color: #9D9D9D;
+    font-weight: 300;
+font-size: 18px;
+line-height: 21px;
+}
+
+#retangulo2{
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 5%;
+}
+#retangulo2 img{
+    width: 100%;
+    height: 565px;
+}
+
+#retangulo3{
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 3%;
+}
+
+#retangulo4{
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 3%;
+}
+#retangulo4 h2{
+    color: #2E948A;
+}
+
+#retangulo5{
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 3%;
+    padding-bottom: 12%;
+}
+#retangulo5 h2{
+    color: #2E948A;
+}
+
+#retangulo6{
+    background: #F7F7F7;
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding-bottom: 8%;
+}
+.retangulo6to1{
+    color: #FF4081;
+}
+
+
+.retangulo6to2{
+    display: flex;
+    justify-content: space-between;
+}
+.retangulo6to2 .one{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.retangulo6to2 .one img{
+    width: 100%;
+    height: 280px;
+}
+.retangulo6to2 .one h2{
+    color: #FF4081;
+    font-weight: 700;
+font-size: 25px;
+line-height: 29px;
+width: 150%;
+}
+.retangulo6to2 .one p{
+    font-weight: 300;
+font-size: 17px;
+line-height: 20px;
+text-align: center;
+
+color: #000000;
+width: 140%;
+}
+.retangulo6to2 .one a{
+    background: #FF4081;
+border-radius: 62px;
+width: 90%;
+height: 62px;
+padding-left: 5%;
+padding-right: 5%;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+
+.retangulo6to2 .two{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.retangulo6to2 .two img{
+    width: 100%;
+    height: 280px;
+}
+.retangulo6to2 .two h2{
+    color: #FF4081;
+    font-weight: 700;
+font-size: 25px;
+line-height: 29px;
+width: 150%;
+padding-left: 40px;
+}
+.retangulo6to2 .two p{
+    font-weight: 300;
+font-size: 17px;
+line-height: 20px;
+text-align: center;
+
+color: #000000;
+width: 140%;
+}
+.retangulo6to2 .two a{
+    background: #FF4081;
+border-radius: 62px;
+width: 90%;
+height: 62px;
+padding-left: 5%;
+padding-right: 5%;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+
+.retangulo6to2 .three{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.retangulo6to2 .three img{
+    width: 100%;
+    height: 280px;
+}
+.retangulo6to2 .three h2{
+    color: #FF4081;
+    font-weight: 700;
+font-size: 25px;
+line-height: 29px;
+width: 150%;
+padding-left: 60px;
+}
+.retangulo6to2 .three p{
+    font-weight: 300;
+font-size: 17px;
+line-height: 20px;
+text-align: center;
+
+color: #000000;
+width: 140%;
+}
+.retangulo6to2 .three a{
+    background: #FF4081;
+border-radius: 62px;
+width: 90%;
+height: 62px;
+padding-left: 5%;
+padding-right: 5%;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+/**Formartando rodapé**/
+footer{
+    display: block;
+    width: 1280px;
+}
+#rodape{
+    background: #419488;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+padding-right: 10%;
+padding-top: 2%;
+padding-bottom: 2%;
+    
+}
+#nav-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+#nav-footer a{
+    font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+
+color: #FFFFFF;
+}
+#links{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#links .link1{
+    border: 2px solid #FFFFFF;
+border-radius: 62px;
+font-weight: 400;
+font-size: 20px;
+line-height: 23px;
+
+color: #FFFFFF;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+Width:289px;
+Height:51px;
+}
+
+
+
+
+@media (min-width:1280px) {
+    header{
+        display: inline;
+        width: 1600px;
+    }
+    footer{
+        display: inline;
+        width: 1600px;
+    }
+    main{
+        display: inline;
+        width: 1600px;
+    }
+}
+
+@media (min-width:960){
+    header{
+        display: inline;
+        width: 1280px;
+    }
+    footer{
+        display: inline;
+        width: 1280px;
+    }
+    main{
+        display: inline;
+        width: 1280px;
+    }
+}
+@media (min-width:640){
+    header{
+        display: inline;
+        width: 960px;
+    }
+    footer{
+        display: inline;
+        width: 960px;
+    }
+    main{
+        display: inline;
+        width: 960px;
+    }
+}
+@media (min-width:320){
+    header{
+        display: inline;
+        width: 640px;
+    }
+    footer{
+        display: inline;
+        width: 640px;
+    }
+    main{
+        display: inline;
+        width: 640px;
+    }
+}
+@media (min-width:260){
+    header{
+        display: inline;
+        width: 320px;
+    }
+    footer{
+        display: inline;
+        width: 320px;
+    }
+    main{
+        display: inline;
+        width: 320px;
+    }
+}
+
+
+
+@media (max-width:960px) {
+    #retangulo3 p{
+        font-size: 20px;
+    }
+
+    #retangulo4 p{
+        font-size: 20px;
+    }
+    #retangulo4 h2{
+        font-size: 30px;
+    }
+    #retangulo5 p{
+        font-size: 20px;
+    }
+    #retangulo5 h2{
+        font-size: 30px;
+    }
+    .retangulo6to1 h1{
+        font-size: 40px;
+    }
+}
+@media (max-width:640px) {
+    #retangulo3 p{
+        font-size: 30px;
+    }
+    #retangulo4 p{
+        font-size:30px ;
+    }
+    #retangulo4 h2{
+        font-size: 40px;
+    }
+    #retangulo5 p{
+        font-size: 30px;
+    }
+    #retangulo5 h2{
+        font-size: 40px;
+    }
+    .retangulo6to1 h1{
+        font-size: 50px;
+    }
+    .retangulo6to2 .three h2{
+        font-size: 40px;
+        text-align: center;
+        padding-left: 0px;
+    }
+    .retangulo6to2 .two h2{
+        font-size: 40px;
+        text-align: center;
+        padding-left: 0px;
+    }
+    .retangulo6to2 .one h2{
+        font-size: 40px;
+        text-align: center;
+        padding-left: 0px;
+    }
+    .retangulo6to2 .three p{
+        font-size: 30px;
+        text-align: start;
+        padding-left: 0px;
+        display: none;
+    }
+    .retangulo6to2 .two p{
+        font-size: 30px;
+        text-align: start;
+        padding-left: 0px;
+        display: none;
+    }
+    .retangulo6to2 .one p{
+        font-size: 30px;
+        text-align: start;
+        padding-left: 0px;
+        display: none;
+    }
+}
