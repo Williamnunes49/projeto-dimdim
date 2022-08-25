@@ -1732,6 +1732,24 @@ footer a  {
     }
 }
 
+@media (min-height:1368px) {
+
+    main {
+
+        height: 383vh;
+    }
+}
+
+@media (min-height:1180px) {
+
+    main {
+
+        height: 454vh;
+    }
+}
+
+
+
 
 
     
