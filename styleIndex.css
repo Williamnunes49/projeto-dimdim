@@ -1,6 +1,5 @@
 html {
-
-    
+   
     height:auto!important;
     min-height:100vh;
     
@@ -13,10 +12,7 @@ body {
     margin: 0;
     font-family:'Ubuntu', sans-serif;
     width: 100wv;
-
-    
-    
-    
+   
 }
 
 header {
@@ -26,66 +22,65 @@ header {
 }
 
 main {
+
     display: block;
+
 }
 
-
-
-
 .container-logo {
+
     background-color: #2E948A;
     display: flex;
     justify-content:space-between;
     padding-bottom: 20px;
     padding-top: 20px;
-    
-    
+      
 }
 
 .container-logo img {
+
     margin-left: 82px;
     
-    
-
-
 }
 
 .container-logo nav  {
     
     margin-top: 27px;
     margin-right: 66px;
-    
-    
-    
+        
 }
 
 .container-logo nav a {
+
     text-decoration: none;
     font-size: 20px;
     padding-right: 37px;
     color:#FDFDFD;
     font-weight: bold;
     
-    
-
 }
 
 #banner {
+
     display: flex;
     justify-content: space-between;
     margin-left: 206px;
+
 }
 
 #banner h1 {
+
     color: #FF4081;
     font-size: 60px;
     width: 488px;
     height: 216px;
     margin-top: 125px;
     margin-bottom: 19px;
+
 }
 
 #banner h3 {
+
     color: #555555;
     font-size: 27px;
     width: 60%;
@@ -94,17 +89,14 @@ main {
 }
 
 #ilustra-banner img {
+
     margin-right: 206px;
     margin-top: 135px;
     margin-bottom: 66px;
     width: 501px;
     height: 511px;
-
-    
-    
+   
 }
-
-
 
 #banner button {
     
@@ -115,45 +107,56 @@ main {
     border-radius: 62px;
     border: 2px solid #FF4081;
     padding: 10px 26px 10px 26px; 
+
 }
 
-
 #imagens-artigos {
+
     display: flex;
     justify-content: space-between;
     background-color: #F6F6F6;
+
 }
 
 #artigos img {
+
     margin-top: 109px;
     margin-bottom: 45px;
     
 }
 
 #img-poupando {
+
     width: 288px;
     height: 270px;
-    /* margin-left: 156px; */
+    
 }
 
 #img-investimento {
+
     width: 238px;
     height: 270px;
+
 }
 
 #img-independencia {
+
     width: 187px;
     height: 270px;
     margin-right: 187px;
+
 }
 
 #container-artigos {
+
     display: flex;
     justify-content: space-between;
     background-color: #F6F6F6;
+
 }
 
 #container-artigos h4 {
+
     font-size: 25px;
     color: #FF4081;
     margin-top: 0;
@@ -162,13 +165,16 @@ main {
 }
 
 #container-iniciantes {
+
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 128px;
+
 }
 
 #container-poupando {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,6 +182,7 @@ main {
 }
 
 #container-independencia {
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,14 +191,17 @@ main {
 }
 
 #artigos p {
+
     width: 293px;
     height: 60px;
     text-align: center;
     margin-top: 0;
     margin-bottom: 26px;
+
 } 
 
 #artigos button {
+
     background-color: #FF4081;
     border-radius: 62px;
     border: none;
@@ -200,14 +210,18 @@ main {
     padding: 10px 45px 10px 45px;
     margin-top: 0;
     margin-bottom: 117px;
+
 }
 
 #container-feedbacks img {
+
     width: 104px;
     height: 104px;
+
 }
 
 #container-feedbacks h1 {
+
     font-size: 37px;
     color: #009688;
     margin-left: 128px;
@@ -218,23 +232,23 @@ main {
 }
 
 #feedbacks01 {
+
     display: flex;
     justify-content: space-around;
     margin-bottom: 86px;
     width: 100%;
-
-    
+  
 }
 
 #feedbacks02 {
+
     display: flex;
     justify-content: space-around;
 
 }
 
-
-
 #img01 {
+
     margin-left: 155px;
     padding-right: 20px;
     
@@ -247,11 +261,14 @@ main {
 }
 
 #img03 {
+
     margin-left: 155px;
     padding-right: 20px;
+
 }
 
 #img04 {
+
     margin-bottom: 157px;
     padding-right: 20px;
     
@@ -261,11 +278,11 @@ main {
     
     width: 25vw;
     height: 70.27px;
-    /* margin-left: -421px; */
     margin-right: 122px;
     font-size: 18px;
     font-weight: 300;
     line-height: 24.55px
+
 }
 
 
@@ -274,7 +291,6 @@ main {
     margin-top: -3.7px;
     font-weight: bold;
 
-
 }
 
 #container-conteudos {
@@ -282,6 +298,7 @@ main {
     display: flex !important;
     flex-direction: row;
     justify-content: space-around;
+
 }
 
 #container-cont1 {
@@ -289,6 +306,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items:flex-start;
+
 }
 
 #container-cont2 {
@@ -296,6 +314,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items:flex-start;
+
 }
 
 #container-cont3 {
@@ -303,6 +322,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items:flex-start;
+
 }
 
 #container-conteudos img {
@@ -312,40 +332,32 @@ main {
     
 }
 
-
-
 #mais-conteudo {
+
     background-color: #E5E5E5;
     padding-bottom: 170px;
     
 }
 
-
-
 #mais-conteudo h1 {
+
     font-size: 37px;
     color: #009688;
     padding-top: 91px;
     padding-bottom: 73px;
     padding-left: 128px;
+
 }
 
-
-
-
 #mais-conteudo h3 {
+
     color:#009688;
     font-size: 27px;
     font-weight: 700;
     margin-top: 11px;
     margin-bottom: -15px;
+
 }
-
-
-
-
-
-
 
 #text-cont1 {
     
@@ -353,6 +365,7 @@ main {
     text-align: justify;
     width: 319px;
     height: 114px;
+
 }
 
 #text-cont2 {
@@ -361,8 +374,6 @@ main {
     text-align: justify;
     width: 319px;
     height: 114px;
-
-    
 
 }
 
@@ -373,19 +384,19 @@ main {
     width: 319px;
     height: 114px;
     
-
 }
 
 #container-button-verTodos {
+
     display: flex;
     justify-content: center;
     background-color: #E5E5E5;
     padding-bottom: 53px;
-    
-    
+       
 }
 
 #container-button-verTodos button {
+
     border-radius: 62px;
     font-size: 25px;
     color: #FF4081;
@@ -393,31 +404,38 @@ main {
     background-color: #E5E5E5;
     padding: 10px 40px 10px 40px;
 
-
 }
 
 footer {
 
     display: block;
+
 }
 
 #container-footer {
+
     display: flex;
     justify-content: space-around;
     background-color: #419488;
+
 }
 
 #logo-footer {
+
     padding-top: 53px;
     padding-bottom: 42.57px;
     margin-left: -87px;
+
 }
 
 footer a  {
+
     color: #FFFFFF;
+
 }
 
 footer button {
+
     color:#FFFFFF;
     background-color:#419488;
     border-radius:62px;
@@ -425,9 +443,11 @@ footer button {
     padding: 10px 68px 10px 68px;
     font-size: 20px;
     margin-bottom: 13px;
+
 }
 
 #links-footer {
+
     display: flex;
     flex-direction: column;
     font-size: 20px;
@@ -435,29 +455,39 @@ footer button {
     padding-top: 53px;
     padding-right: 114px;
     gap: 10px;
+
 }
 
-footer a  {
+#links-footer a  {
+
     text-decoration: none;
     font-weight: 400;
+
 }
 
 #buttons-footer {
+
     display: flex;
     flex-direction: column;
     padding-top: 50px;
     margin-right: -73px;
+
 }
 
 @media (max-width:1498px) {
 
     #ilustra-banner img {
+
         margin-right: 140px;
+
     }
 
     #banner {
+
         margin-left: 140px;
+
     }
+
 }
 
 @media (max-width:1469px) {
@@ -465,27 +495,31 @@ footer a  {
     .nome {
 
         margin-top: 42px;
+
     }
 }
 
 @media (max-width:1354px) {
 
     #ilustra-banner img {
+
         margin-right: 80px;
+
     }
 
     #banner {
+
         margin-left: 80px;
+
     }    
 }
-
-
 
 @media (max-width:1307px) {
 
     .nome {
 
         margin-top: 44px;
+
     }
 
     #container-img-conteudos img {
@@ -493,27 +527,27 @@ footer a  {
         width: 250px;
         height: 151px;
 
-
     }
-
 
     #container-conteudos img {
 
         width: 250px;
         height: 151px;
+
     }
 
     #container-conteudos h3 {
 
         font-size: 22px;
+
     }
 
     #container-conteudos p {
 
         font-size: 16px;
         width: 250px;
-    }
 
+    }
 
 }
 
@@ -522,59 +556,72 @@ footer a  {
     .feedback {
 
         margin-right: 189px;
+
     }
 
     #container-feedbacks {
 
         display: block;
+
     }
 
     #img01 {
 
         margin-left: 120px;
+
     }
 
     #img03 {
 
         margin-left: 120px;
+
     }
 }
 
 @media (max-width:1300px) {
 
     #img-poupando {
+
         width: 240px;
         height: 225px;
+
     }
 
     #img-investimento {
+
         width:200px;
         height:227px;
+
     }
 
     #container-artigos h4 {
 
         font-size: 20px;
+
     }
 
     #container-artigos p {
 
         font-size: 14px;
+
     }
 
     #container-artigos button {
 
         font-size: 16px;
+
     }
 
     #container-independencia {
 
         margin-right: 70px;
+
     }
 
     #container-iniciantes {
 
         margin-left: 70px;
+
     }
 
     footer button {
@@ -582,72 +629,98 @@ footer a  {
         padding-left: 30px;
         padding-right: 30px;
         margin-right: 30px;
+
     }
 
     #logo-footer {
 
         margin-left: 20px;
+
     }
 }
 
+@media (min-width:1300px) {
+
+    #button01 {
+
+        padding-right: 48px;
+        padding-left: 52px;
+    }
+
+    #button02 {
+
+        padding-right: 37px;
+        padding-left: 30px;
+    }
+
+}
 
 @media (min-width:1235px) {
 
     #img01 {
 
         margin-left: 120px;
+
     }
 
     #img03 {
 
         margin-left: 120px;
-    }
 
+    }
    
 }
 
 @media (max-width:1234px) {
 
     #ilustra-banner img {
+
         width: 440px;
         height: 450px;
+
     }
 
     #container-conteudos img {
 
         width: 200px;
         height: 121px;
+
     }
 
     #container-conteudos h3 {
 
         font-size: 19px;
+
     }
 
     #container-conteudos p {
 
         font-size: 15px;
         width: 230px;
+
     }
 
     .feedback {
 
         margin-right: 81px;
+
     }
 
     #container-conteudos p {
 
         width: 199px;
+
     }
 
 }
 
-
 @media (max-width:1174px) {
 
     #ilustra-banner img {
+
         width: 400px;
         height: 410px;
+
     }
 
     #banner h1 {
@@ -660,6 +733,7 @@ footer a  {
     }
 
     #banner h3 {
+
         font-size: 25px;
         margin-top: 0;
         margin-bottom: 23px;
@@ -667,46 +741,55 @@ footer a  {
     }
 
     #banner button {
+
         font-size: 25px;
+
     }
 
     #img01 {
 
         margin-left: 103px;
+
     }
 
     #img03 {
 
         margin-left: 103px;
-    }
 
+    }
 
 }
 
 @media (max-width:1117px) {
 
     footer button {
+
         font-size: 15px;
         margin-right: 0;
+
     }
 
     #buttons-footer {
 
         margin-right: 30px;
+
     }
 }
 
 @media (max-width:1081px) {
 
     #img-poupando {
+
         width: 190px;
         height: 170px;
         
     }
 
     #img-investimento {
+
         width:150px;
         height:170px;
+
     }
 
     #container-artigos h4 {
@@ -717,43 +800,51 @@ footer a  {
     #container-artigos p {
 
         font-size: 14px;
+
     }
 
     #container-artigos button {
 
         font-size: 15px;
+
     }
 
     #container-independencia {
 
         margin-right: 50px;
+
     }
 
     #container-feedbacks h1 {
 
         font-size: 28px;
         width: 400px;
+
     }
 
     .feedback {
 
         margin-right: 50px;
+
     }
 
     #img01 {
 
         margin-left: 60px;
+        
     }
 
     #img03 {
 
         margin-left: 60px;
+
     }
 
     #container-feedbacks h1 {
 
         margin-left: 80px;
         width: 500px;
+
     }
 
     #mais-conteudo {
@@ -766,14 +857,18 @@ footer a  {
     #container-iniciantes {
 
         margin-left: 0;
+
     }
+
 }
 
 @media (max-width:1070px) {
 
     #ilustra-banner img {
+
         width: 350px;
         height: 358px;
+
     }
 
     #banner h1 {
@@ -781,15 +876,18 @@ footer a  {
         font-size: 40px;
         width:370px;
         height: 160px;
+
     }
 
     #banner h3 {
+
         font-size: 22px;
         margin-bottom: 13px;
 
     }
 
     #banner button {
+
         font-size: 22px;
     }
 
@@ -799,6 +897,14 @@ footer a  {
 
     }
 
+}
+
+@media (min-width:1119px) {
+
+    #button01 {
+
+        width: 229px !important;
+    }
 
 }
 
@@ -807,7 +913,9 @@ footer a  {
     .nome {
 
         margin-top: 66px;
+
     }
+
 }
 
 @media (max-width:1000px) {
@@ -816,51 +924,56 @@ footer a  {
 
         display: flex;
         flex-direction: column;
+
     }
 
     #img-poupando {
+
         width: 240px;
         height: 225px;
         
     }
 
     #img-investimento {
+
         width:200px;
         height:227px;
+
     }
 
     #container-artigos h4 {
 
         font-size: 22px;
+
     }
 
     #container-artigos p {
 
         font-size: 17px;
+
     }
 
     #container-artigos button {
 
         font-size: 18px;
+
     }
 
     #container-independencia {
 
         margin-right: 0;
+
     }
 
-    
-
-
 }
-
-
 
 @media (max-width:958px) {
 
     #ilustra-banner img {
+
         width: 300px;
         height: 307px;
+
     }
 
     #banner h1 {
@@ -868,20 +981,24 @@ footer a  {
         font-size: 35px;
         width: 332px;
         height: 140px;
+
     }
 
     #banner h3 {
+
         font-size: 19px;
 
     }
 
     #banner button {
+
         font-size: 19px;
     }
 
     .feedback {
 
         margin-right: -42px;
+
     }
 
     #feedbacks01 {
@@ -890,6 +1007,7 @@ footer a  {
         flex-direction: column;
         align-items: center;
         margin-bottom: 0;
+
     }
 
     #feedbacks02 {
@@ -905,30 +1023,27 @@ footer a  {
         display: flex;
         flex-direction: column;
         align-items: center;
+
     }
 
     #container-feedbacks img {
 
         margin-left: 0;
         padding-right: 0;
-    }
 
-    #img02 {
-
-        /* margin-left: 60px; */
     }
 
     #img04 {
 
-        /* margin-left: 60px; */
         margin-bottom: 20px;
+
     }
 
     .nome {
 
         margin-bottom: 116px;
-    }
 
+    }
 
 }
 
@@ -937,7 +1052,18 @@ footer a  {
     .nome {
 
         margin-top: 67px;
+
     }
+
+}
+
+@media (min-width: 943px) {
+
+    #button01 {
+
+        width: 200px;
+    }
+
 }
 
 @media (max-width:940px) {
@@ -946,30 +1072,31 @@ footer a  {
 
         width: 200px;
         height: 63px;
+
     }
     
-   
-
     #img-contato img {
 
         display: none;
-    }
 
-   
+    }
 
     footer img {
+
         width: 30vw;
+
     }
 
-    footer a {
+    #links-footer a {
+
         font-size: 17px;
+
     }
 
     #buttons-footer {
 
         gap:10px;
-
-    padding-top: 49px;
+        padding-top: 49px;
     }
 
     footer button {
@@ -979,14 +1106,8 @@ footer a  {
         font-size: 15px;
         margin-bottom: 0;
         padding: 0;
-        
-
-    }
-
-    /* main {
-
-        height: 65vh;
-    } */
+    
+    }   
         
 }
 
@@ -1005,11 +1126,9 @@ footer a  {
 
     .container-logo nav {
 
-        margin-right: 80px;
+        margin-right: 34px;
     }
  
-
-
 } 
 
 @media (max-width:846px) {
@@ -1046,9 +1165,8 @@ footer a  {
 
         height: 58vh;
    }
+
 }
-
-
 
 @media (max-width:792px){
 
@@ -1063,6 +1181,7 @@ footer a  {
         flex-direction: column;
         align-items: center;
     }
+
 }
 
 @media (max-width:785px) {
@@ -1071,6 +1190,7 @@ footer a  {
 
         width: 129px;
     }
+
 }
 
 @media (max-width:778px) {
@@ -1125,7 +1245,6 @@ footer a  {
         padding-bottom: 48px;
     }
 
-
 }
 
 @media (max-width:734px) {
@@ -1160,18 +1279,14 @@ footer a  {
     #pagina-inicio {
 
         height: 53vh;
-   }
+    }
 
    #container-artigos img {
     
         width: 200px;
         height: 188px;
 
-
    }
-
-
-
 
 }
 
@@ -1179,15 +1294,14 @@ footer a  {
 
     .container-logo nav {
 
-        margin-right: 60px;
-
+        margin-right: 34px;
+        padding-left: 20px;
 
     }
 
     .container-logo img {
 
         margin-left: 60px;
-
 
     }
 
@@ -1207,7 +1321,6 @@ footer a  {
         font-size: 13px;
     }
 
-
 }
 
 @media (max-width:703px) {
@@ -1221,6 +1334,7 @@ footer a  {
 
         margin-left: 100px;
     }
+
 }
 
 @media (max-width:697px) {
@@ -1250,6 +1364,7 @@ footer a  {
         font-size: 31px;
         width: 452px;
     }
+
 }
 
 @media (max-width:563px) {
@@ -1269,10 +1384,9 @@ footer a  {
         font-size: 27px;
         width: 388px;
     }
+
 }
     
-
-
 @media (max-width: 614px) {
 
     footer button {
@@ -1283,7 +1397,6 @@ footer a  {
         margin-bottom: 0;
         padding: 0;
         
-
     }
 
     #logo-footer img {
@@ -1316,10 +1429,9 @@ footer a  {
     .container-logo nav {
 
         padding-left: 60px;
-
-        
-        
+    
     }
+
 }
 
 @media (max-width:609px) {
@@ -1328,6 +1440,7 @@ footer a  {
 
         margin-top: 203px;
     }
+
 }
 
 @media (max-width:606px) {
@@ -1355,6 +1468,7 @@ footer a  {
         padding: 5px 21px 5px 21px;
 
     }
+
 }
 
 @media (max-width:595px) {
@@ -1363,6 +1477,16 @@ footer a  {
 
         margin-left: -10px;
     }
+
+}
+
+@media (max-width:585px) {
+
+    .menu-link {
+
+        font-size: 16px !important;
+    }
+
 }
 
 @media (max-width:563px) {
@@ -1370,7 +1494,9 @@ footer a  {
     #text-wally {
 
         width: 111px;
+
     }
+
 }
 
 @media (max-width:559px) {
@@ -1378,29 +1504,24 @@ footer a  {
     #ilustra-banner img {
 
         display: none;
+
     }
 
     #links-footer {
 
         padding-right: 40px;
-    }
 
-    
+    }
 
     #container-feedbacks h1 {
 
         font-size: 28px;
         width: 360px;
         margin-right: 100px;
+
     }
 
-    
-
-    
-
-
 }
-
 
 @media (max-width: 540px) {
 
@@ -1410,6 +1531,7 @@ footer a  {
         width: 160px;
         height: 50px;
         padding-top: 5px;
+
     }
 
     .container-logo nav {
@@ -1417,56 +1539,58 @@ footer a  {
         margin-right: 0px;
         padding-left: 40px;
         margin-right: 10px;
+
     }
 
     .container-logo nav a {
 
         font-size: 17px;
+
     }
 
     #logo-footer img {
 
         width: 150px;
         height: 49px;
+
     }
 
     #buttons-footer button {
 
         width: 134px;
         height: 31px;
+
     }
 
     #links-footer a {
 
         font-size: 13px;
+
     }
 
     #links-footer {
 
         gap:2px;
+
     }
 
     #banner h1 {
 
         font-size: 30px;
+
     }
 
     #banner h3 {
 
         font-size: 17px;
+
     }
 
     #banner button {
 
         font-size: 17px;
+
     }
-
-    
-
-    
-
-    
-
 
 }
 
@@ -1476,21 +1600,36 @@ footer a  {
 
         margin-top: 225px;
     }
+
 }
 
+@media (max-width:469px) {
 
+    .menu-link {
+
+        font-size: 14px !important;
+
+    }
+    
+    .container-logo nav {
+
+        margin-left: 0;
+        padding-left: 20px;
+    }
+
+}
 
 @media (max-width: 451px) {
 
     .container-logo img {
 
         margin-left: 20px;
+
     }
 
     .container-logo nav {
 
         margin-right: 0px;
-
         
     }
 
@@ -1498,24 +1637,27 @@ footer a  {
 
         width: 130px;
         height: 42px;
+
     }
 
     #buttons-footer button {
 
         width: 114px;
         height: 26px;
+
     }
 
     #links-footer a {
 
         font-size: 12px;
+
     }
 
     #links-footer {
 
         gap:0px;
-    }
 
+    }
 
 }
 
@@ -1524,11 +1666,15 @@ footer a  {
     .container-logo img {
 
         margin-left: 10px;
+        width: 140px;
+        height: 44px;
+
     }
 
     .container-logo nav a {
 
         font-size: 15px;
+
     }
 
     #buttons-footer button {
@@ -1536,25 +1682,27 @@ footer a  {
         width: 94px;
         height: 21px;
         font-size: 10px;
+
     }
 
     #banner h1 {
 
         font-size: 28px;
         width: 273px;
+
     }
 
     #banner h3 {
 
         font-size: 15px;
+
     }
 
     #banner button {
 
         font-size: 15px;
+
     }
-
-
 
 }
 
@@ -1563,17 +1711,21 @@ footer a  {
     .container-logo nav a {
 
         padding-right: 10px;
+
     }
 
     .container-logo nav {
 
-        padding-left: 20px;
+        padding-left: 0;
+        margin-right: 10px;
+
     }
 
     #logo-footer img {
 
         width: 110px;
         height: 36px;
+
     }
 
     #banner {
@@ -1583,48 +1735,58 @@ footer a  {
     }
 
     #titulo-mais h1 {
+
         font-size: 23px;
         margin-left: 31px;
+
     }
 
     #container-button-verTodos button {
 
         font-size: 16px;
+
     }
 
     #pagina-inicio {
 
         height: 75vh;
+
     }
 
     .feedback {
 
         width: 199px;
+
     }
 
     #text-wally {
 
         width: 227px;
+
     }
 
     #text-jaden {
 
         width: 227px;
+
     }
 
     #text-whoopi {
 
         width: 227px;
+
     }
 
     #text-janes {
 
         width: 227px;
+
     }
 
     .nome {
 
         margin-top: 71px;
+
     }
 
 }
@@ -1636,22 +1798,26 @@ footer a  {
         width: 130px;
         height: 41px;
         padding-top: 5px;
+
     }
 
     .container-logo nav a {
 
         font-size: 13px;
+
     }
 
     .container-logo nav {
 
         margin-top: 22px;
+
     }
 
     #logo-footer img {
 
         width: 100px;
         height: 32px;
+
     }
 
     #buttons-footer button {
@@ -1659,26 +1825,23 @@ footer a  {
         width: 84px;
         height: 19px;
         font-size: 9px;
+
     }
 
     #links-footer a {
 
         font-size: 11px;
+
     }
-
    
-    
 }
-
-
 
 @media (max-width:296px) {
 
     .container-logo img {
 
         width: 100px;
-        height: 32px;
-        
+        height: 32px;    
 
     }
 
@@ -1692,11 +1855,8 @@ footer a  {
 
         margin-top: 17px;
     }
-
-    
-    
+   
 }
-
 
 @media (min-height:1180px) {
 
@@ -1704,6 +1864,7 @@ footer a  {
 
         height: 67vh;
     }
+
 }
 
 @media (min-height:1368px) {
@@ -1712,6 +1873,7 @@ footer a  {
 
         height: 71vh;
     }
+
 }
 
 @media (min-width:1920px) {
@@ -1720,16 +1882,21 @@ footer a  {
 
         margin-left: 111px;
         padding-right: 0;
+
     }
 
     .feedback {
 
         margin-right: 203px;
+
     }
 
     #container-conteudos {
+
         gap: 75px;
+
     }
+
 }
 
 @media (min-height:1368px) {
@@ -1738,6 +1905,7 @@ footer a  {
 
         height: 383vh;
     }
+
 }
 
 @media (min-height:1180px) {
@@ -1745,7 +1913,9 @@ footer a  {
     main {
 
         height: 454vh;
+
     }
+
 }
 
 
