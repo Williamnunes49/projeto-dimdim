@@ -474,6 +474,16 @@ footer button {
 
 }
 
+#link001 {
+
+    text-decoration: none;
+}
+
+#link002 {
+
+    text-decoration: none;
+}
+
 @media (max-width:1498px) {
 
     #ilustra-banner img {
@@ -1519,6 +1529,11 @@ footer button {
         width: 360px;
         margin-right: 100px;
 
+    }
+
+    #links001 {
+
+        font-size: 15px;
     }
 
 }

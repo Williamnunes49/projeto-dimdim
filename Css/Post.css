@@ -19,8 +19,14 @@ padding-right: 10%;
 padding-top: 2%;
 padding-bottom: 2%;
 }
+
+.linklogo {
+
+    width: 20%;
+}
+
 #cabeçalho img{
-    width: 30%;
+    width: 100%;
     display: flex;
     
 }
