@@ -9,8 +9,8 @@ async function creatPerson(event) {
         
        const response = confirm(`Deseja enviar o cadastro?`)
        if(response){
-       const sending = await fetch(
-        "https://localhost:6000/cadastrados",
+       const response = await fetch(
+        "https://localhost:3000/cadastrados",
         {
             method: "POST",
             headers: {
@@ -18,7 +18,7 @@ async function creatPerson(event) {
             },
             body: JSON.stringify(arrayCreate),
         }) 
-        const dates = await sending.json();
+        const dates = await response.json();
         alert(`Parabéns ${arrayCreate.name}, você foi cadastrado`)
        }
     } catch (error) {
