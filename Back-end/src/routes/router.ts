@@ -11,3 +11,5 @@ export default router.get("/", (req:Request, res:Response) => {
 .get("/cadastrados", cadastradoController.getAllCadastrados)
 .get("/cadastrados/:id", cadastradoController.getOneCadastrado)
 .post("/cadastrados", validateCadastrados, cadastradoController.createCadastrado)
+.put("/cadastrados/:id", validateCadastrados, cadastradoController.updateCadastrado)
+.delete("/cadastrados/:id", cadastradoController.deleteCadastrado)

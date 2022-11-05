@@ -54,8 +54,62 @@ const cadastradoController = {
         } catch (error: any) {
             Logger.error(`Pane no sistema: ${error.message}`)
         }
-    }   
-    
+    },
+    async updateCadastrado (req: Request, res: Response) {
+        try {
+            const { id } = req.params;
+            const { name, email, message } = req.body;
+            const newUpdatedCadastrado = await Cadastrados.update(
+                {
+                    name,
+                    email,
+                    message
+                },
+                {
+                    where: {
+                        id: id,
+                    }
+                }
+            );
+            const oneNewCadastrado = await Cadastrados.findOne({
+                where: {
+                    id: id,
+                }
+            });
+            if(oneNewCadastrado === null){
+                res.status(404).json("ID não encontrado")
+            }
+            else{
+              res.status(200).json(oneNewCadastrado);}
+        } 
+        catch (error: any) {
+            Logger.error(`Pane no sistema: ${error.message}`)
+        }
+            
+    },
+    async deleteCadastrado (req: Request, res: Response) {
+        try {
+            const { id } = req.params
+            const oneCadastrado = await Cadastrados.findOne({
+                where: {
+                    id: id,
+                }
+            })
+            const deletingCadastrado = await Cadastrados.destroy({
+                where: {
+                    id: id,
+                }
+            })
+            if(oneCadastrado === null){
+                res.status(404).json("ID não encontrado")
+            }
+            else{
+              res.status(200).json("ID deletado")}
+        } catch (error: any) {
+            Logger.error(`Pane no sistema: ${error.message}`)
+        }
+    }
 }
+    
 
 module.exports = cadastradoController

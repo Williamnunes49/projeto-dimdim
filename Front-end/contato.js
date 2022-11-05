@@ -1,5 +1,4 @@
-async function creatPerson(event) {
-    event.preventDefault();
+async function creatPerson() {
     try {
        arrayCreate = {
         name: document.getElementById("form-nome").value,
@@ -9,7 +8,7 @@ async function creatPerson(event) {
         
        const response = confirm(`Deseja enviar o cadastro?`)
        if(response){
-       const response = await fetch(
+       const sending = await fetch(
         "https://localhost:3000/cadastrados",
         {
             method: "POST",
@@ -18,7 +17,7 @@ async function creatPerson(event) {
             },
             body: JSON.stringify(arrayCreate),
         }) 
-        const dates = await response.json();
+        const dates = await sending.json();
         alert(`Parabéns ${arrayCreate.name}, você foi cadastrado`)
        }
     } catch (error) {
@@ -26,4 +25,4 @@ async function creatPerson(event) {
     }
 }
 
-document.getElementById("button-form").onclick = creatPerson;
+document.getElementById("button-form").onclick = creatPerson
