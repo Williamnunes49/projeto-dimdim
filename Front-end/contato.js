@@ -7,9 +7,9 @@ async function creatPerson() {
        }
         
        const response = confirm(`Deseja enviar o cadastro?`)
-       if(response){
+       if(response){ 
        const sending = await fetch(
-        "https://localhost:3000/cadastrados",
+        "http://localhost:3000/cadastrados",
         {
             method: "POST",
             headers: {
