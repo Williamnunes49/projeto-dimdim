@@ -50,6 +50,32 @@ class CadastradoController {
                 .json({ success: false, msg: "✖️ Ops, deu ruim!"})
         }
     }
+
+    static async getOne(req: Request, res: Response) {
+        try {
+
+            if (!req.params.id || isNaN(parseInt(req.params.id))) {
+                return res
+                    .status(500)
+                    .json({ success: false, msg: "✖️ Eita! Informe um ID válido!" });
+            }
+
+            const cadastradoId: number = parseInt(req.params.id);
+            const cadastrado = await CadastradoService.getOneCadastrado(cadastradoId);
+
+            if (!cadastrado) return res
+                .status(500)
+                .json({ success: false, msg: "✖️ Livro não encontrado!" });
+
+            return res.json({ success: true, data: cadastrado });
+
+        } catch (error) {
+            console.log(error);
+            return res
+                .status(500)
+                .json({ success: false, msg: "✖️ Ops, deu ruim!" });
+        }
+    }
 }
 
 export default CadastradoController;

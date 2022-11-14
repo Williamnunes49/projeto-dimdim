@@ -10,6 +10,10 @@ class CadastradoService {
         if (!dados.name || !dados.email || !dados.message) throw new Error("Todos os campos são obrigatórios!");
         return CadastradoRepository.createCadastrado(dados);
     }
+    
+    getOneCadastrado(cadastradoId: number): Promise<any> {
+        return CadastradoRepository.getOneCadastrado(cadastradoId)
+    }
 }
 
 export default new CadastradoService();

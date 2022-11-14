@@ -13,6 +13,14 @@ class CadastradoRepository {
             message: dados.message
         })
     }
+
+    getOneCadastrado(cadastradoId: number): Promise<any | null> {
+        return Cadastrado.findOne({
+            where: {
+                id: cadastradoId
+            }
+        })
+    }
 }
 
 export default new CadastradoRepository();
