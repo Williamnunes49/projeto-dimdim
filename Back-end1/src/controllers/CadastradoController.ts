@@ -1,6 +1,7 @@
 import { Request, Response } from "express"
 import { CadastradoInterface } from "../interfaces/CadastradoInterface"
 import CadastradoService from "../services/CadastradoService"
+import Logger from "../../config/logger";
 
 class CadastradoController {
     static async allCadastrados(req: Request, res: Response) {
@@ -10,16 +11,19 @@ class CadastradoController {
             const cadastrados: Array<CadastradoInterface>  = await CadastradoService.getCadastrados();
         
             if (cadastrados.length <= 0) {
+                Logger.error("⚠️ Nenhum cadastrado até o momento.");
                 return res
                     .status( 500)
                     .json({success: false, msg: "⚠️ Nenhum cadastrado até o momento."});
             }
-
-            return res 
-                .status(200)
-                .json({success: true, msg: "✔️ Cadastrados encontrados com sucesso!", data: cadastrados})
-        } catch (error){
-            console.log(error);
+            else{
+                Logger.info("✔️ Cadastrados encontrados com sucesso!")
+                return res 
+                    .status(200)
+                    .json({success: true, msg: "✔️ Cadastrados encontrados com sucesso!", data: cadastrados})
+            }
+        } catch (error: any){
+            Logger.error(`Pane no sistema: ${error.message}`)
             return res
                 .status(500)
                 .json({success: false, msg: "✖️ Ops, deu ruim!"})
@@ -40,11 +44,12 @@ class CadastradoController {
             
             const cadastrado = await CadastradoService.createCadastrado(cadastradoObj);
 
+            Logger.info("✔️ Cadastrado criado com sucesso!")
             return res
                 .status(200)
                 .json({ success: true, msg: "✔️ Cadastrado criado com sucesso!", data: cadastrado });
         } catch (error) {
-            console.log(error)
+            Logger.error(error)
             return res
                 .status(500)
                 .json({ success: false, msg: "✖️ Ops, deu ruim!"})
@@ -55,6 +60,7 @@ class CadastradoController {
         try {
 
             if (!req.params.id || isNaN(parseInt(req.params.id))) {
+                Logger.error("✖️ Não foi passado um ID válido!")
                 return res
                     .status(500)
                     .json({ success: false, msg: "✖️ Eita! Informe um ID válido!" });
@@ -63,11 +69,16 @@ class CadastradoController {
             const cadastradoId: number = parseInt(req.params.id);
             const cadastrado = await CadastradoService.getOneCadastrado(cadastradoId);
 
-            if (!cadastrado) return res
+            if (!cadastrado) {
+                Logger.error("✖️ Cadastrado não encontrado!")
+                return res
                 .status(500)
-                .json({ success: false, msg: "✖️ Cadastrado não encontrado!" });
-
-            return res.json({ success: true, data: cadastrado });
+                .json({ success: false, msg: "✖️ Cadastrado não encontrado!" })
+            }
+            else{
+                Logger.info("Mandando o cadastrado que foi pedido!")
+                return res.json({ success: true, data: cadastrado })
+            }
 
         } catch (error) {
             console.log(error);
@@ -91,6 +102,7 @@ class CadastradoController {
         try {
 
             if (!req.params.id || isNaN(parseInt(req.params.id))) {
+                Logger.error("✖️ Não foi passado um ID válido")
                 return res
                     .status(500)
                     .json({ success: false, msg: "✖️ Eita! Informe um ID válido!" });
@@ -99,18 +111,20 @@ class CadastradoController {
             const cadastradoId: number = parseInt(req.params.id);
             const cadastrado = await CadastradoService.getOneCadastrado(cadastradoId)
 
-            if (!cadastrado) return res
+            if (!cadastrado) {
+                Logger.error("✖️ Não foi encontrado")
+                return res
                 .status(500)
                 .json({ success: false, msg: "✖️ Cadastrado não encontrado!" });
+            }
+            else{
+                const updatedCadastrado = await CadastradoService.updateCadastrado(cadastradoId,cadastradoObj);
 
-            const updatedCadastrado = await CadastradoService.updateCadastrado(cadastradoId,cadastradoObj)
-
-            return res
-                .status(200)
-                .json({ success: true, msg: "✔️ Cadastrado atualizado com sucesso!", data: cadastradoObj });
-
+                Logger.info("✔️ Cadastrado atualizado com sucesso!")
+                return res.status(200).json({ success: true, msg: "✔️ Cadastrado atualizado com sucesso!", data: cadastradoObj });
+            }
         } catch (error) {
-            console.log(error);
+            Logger.error(error);
             return res
                 .status(500)
                 .json({ success: false, msg: "✖️ Ops, deu ruim!" });
@@ -121,6 +135,7 @@ class CadastradoController {
         try {
             
             if (!req.params.id || isNaN(parseInt(req.params.id))) {
+                Logger.error("✖️ Não foi passado um ID válido")
                 return res
                     .status(500)
                     .json({ success: false, msg: "✖️ Eita! Informe um ID válido!" });
@@ -129,16 +144,20 @@ class CadastradoController {
             const cadastradoId: number = parseInt(req.params.id);
             const cadastrado = await CadastradoService.getOneCadastrado(cadastradoId);
 
-            if (!cadastrado) return res
+            if (!cadastrado) {
+                Logger.error("✖️ Não foi encontrado")
+                return res
                 .status(500)
                 .json({ success: false, msg: "✖️ Cadastrado não encontrado!" });
-
+            }
+            else {
             await CadastradoService.deleteCadastrado(cadastradoId)
 
+            Logger.info("✔️ Cadastrado excluído com sucesso!")
             return res.status(200).json({ success: true, msg: "✔️ Cadastrado excluído com sucesso!" });
-
+            }
         } catch (error) {
-            console.log(error);
+            Logger.error(error);
             return res
                 .status(500)
                 .json({ success: false, msg: `✖️ ${error}` });

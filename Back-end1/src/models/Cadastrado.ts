@@ -1,4 +1,4 @@
-import { db } from "../config/database";
+import { db } from "../database/database";
 import { Model, DataTypes, Sequelize} from "sequelize";
 
 export default class Cadastrado extends Model {}
