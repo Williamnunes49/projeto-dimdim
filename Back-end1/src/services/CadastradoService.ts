@@ -14,6 +14,14 @@ class CadastradoService {
     getOneCadastrado(cadastradoId: number): Promise<any> {
         return CadastradoRepository.getOneCadastrado(cadastradoId)
     }
+
+    async deleteCadastrado(cadastradoId: number): Promise<any> {
+        const cadastrado = await CadastradoRepository.getOneCadastrado(cadastradoId);
+
+        if(!cadastrado) throw new Error("Cadastrado não encontrado!");
+        
+        return CadastradoRepository.deleteCadastrado(cadastradoId)
+    }
 }
 
 export default new CadastradoService();

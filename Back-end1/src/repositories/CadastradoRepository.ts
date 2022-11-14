@@ -21,6 +21,15 @@ class CadastradoRepository {
             }
         })
     }
+
+    deleteCadastrado(cadastradoId: number): Promise<any> {
+        return Cadastrado.destroy({
+            where: {
+                id: cadastradoId
+            }
+        })
+    }
+
 }
 
 export default new CadastradoRepository();

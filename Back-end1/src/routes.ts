@@ -12,6 +12,7 @@ export function setupRoutes(app: Application) {
     router.group( "/cadastrados", (router) => {
         router.get("/", CadastradoController.allCadastrados);
         router.post("/", CadastradoController.create);
-        router.get("/:id", CadastradoController.getOne)
+        router.get("/:id", CadastradoController.getOne);
+        router.delete("/:id", CadastradoController.delete)
     })
 }
