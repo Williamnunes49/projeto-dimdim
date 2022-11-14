@@ -13,6 +13,7 @@ export function setupRoutes(app: Application) {
         router.get("/", CadastradoController.allCadastrados);
         router.post("/", CadastradoController.create);
         router.get("/:id", CadastradoController.getOne);
-        router.delete("/:id", CadastradoController.delete)
+        router.delete("/:id", CadastradoController.delete);
+        router.put("/:id", CadastradoController.update)
     })
 }

@@ -77,6 +77,46 @@ class CadastradoController {
         }
     }
 
+    static async update(req: Request, res: Response) {
+
+        const payload: any = req.body;
+        console.log(payload);
+
+        const cadastradoObj: CadastradoInterface = {
+            name: payload.name,
+            email: payload.email,
+            message: payload.message
+        };
+
+        try {
+
+            if (!req.params.id || isNaN(parseInt(req.params.id))) {
+                return res
+                    .status(500)
+                    .json({ success: false, msg: "✖️ Eita! Informe um ID válido!" });
+            }
+
+            const cadastradoId: number = parseInt(req.params.id);
+            const cadastrado = await CadastradoService.getOneCadastrado(cadastradoId)
+
+            if (!cadastrado) return res
+                .status(500)
+                .json({ success: false, msg: "✖️ Cadastrado não encontrado!" });
+
+            const updatedCadastrado = await CadastradoService.updateCadastrado(cadastradoId,cadastradoObj)
+
+            return res
+                .status(200)
+                .json({ success: true, msg: "✔️ Cadastrado atualizado com sucesso!", data: cadastradoObj });
+
+        } catch (error) {
+            console.log(error);
+            return res
+                .status(500)
+                .json({ success: false, msg: "✖️ Ops, deu ruim!" });
+        }
+    }
+
     static async delete(req: Request, res: Response) {
         try {
             
@@ -92,7 +132,7 @@ class CadastradoController {
             if (!cadastrado) return res
                 .status(500)
                 .json({ success: false, msg: "✖️ Cadastrado não encontrado!" });
-                
+
             await CadastradoService.deleteCadastrado(cadastradoId)
 
             return res.status(200).json({ success: true, msg: "✔️ Cadastrado excluído com sucesso!" });

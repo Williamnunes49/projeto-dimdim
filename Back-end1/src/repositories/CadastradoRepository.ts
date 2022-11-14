@@ -30,6 +30,19 @@ class CadastradoRepository {
         })
     }
 
+    updateCadastrado(cadastradoId: number, dados: CadastradoInterface): Promise<Array<any>> {
+        return Cadastrado.update( {
+            name: dados.name,
+            email: dados.email,
+            message: dados.message
+        },
+        {
+            where: {
+                id: cadastradoId
+            }
+        })
+    }
+
 }
 
 export default new CadastradoRepository();
